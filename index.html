@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Welcome to the Pizz Buzz game</h1>
+    <h2>Please click the right button - test</h2>
+
+    <script>
+
+        // כל זה בתוך פונקציה
+        // loop 1-100 display numbers
+        // במידה 3 - fizz
+        // במידה 5 -buzz
+        // במידה ומתחלק ב3 ו5 - fizzbuzz
+        function Sevenboom(fizz,bazz) {
+            for (let i = 1; i <= 100; i++) {
+                if (i % fizz === 0 && i % bazz === 0) {
+                    console.log('fizzbuzz')
+                }
+                else if (i % fizz === 0) {
+                    console.log("fizz")
+                }
+                else if (i % bazz === 0) {
+                    console.log('buzz')
+                } else {
+                    console.log(i)
+                }
+
+
+            }
+        }
+        let fizzNum = prompt('add tha fizz number')
+        let bazzNum = prompt('add tha bazz number')
+        Sevenboom(fizzNum,bazzNum);
+
+    </script>
+</body>
+
+</html>
